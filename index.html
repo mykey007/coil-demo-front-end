@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Timeline | Collaboration Dashboard</title>
+
+
+
+<meta name="description" content="To help sprint participants stay on the same page">
+
+
+
+<link rel="shortcut icon" type="image/ico"
+  href="/assets/uswds/img/favicons/favicon.ico">
+
+<link rel="icon" type="image/png"
+  href="/assets/uswds/img/favicons/favicon.png">
+
+<link rel="icon" type="image/png"
+  sizes="192x192"
+  href="/assets/uswds/img/favicons/favicon-192.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  href="/assets/uswds/img/favicons/favicon-57.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="72x72"
+  href="/assets/uswds/img/favicons/favicon-72.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="114x114"
+  href="/assets/uswds/img/favicons/favicon-114.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="144x144"
+  href="/assets/uswds/img/favicons/favicon-144.png">
+
+
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+  <section class="usa-banner" aria-label="Official government website">
+  <div class="usa-accordion">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/assets/uswds/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds/img/icon-dot-gov.svg" role="img" alt="Dot gov">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br/>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds/img/icon-https.svg" role="img" alt="Https">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS</strong>
+              <br/>
+              A <strong>lock</strong> (
+<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>
+) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--extended" role="banner">
+
+
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://18f.gsa.gov/assets/img/logos/18f-logo.svg"
+              alt="18F">
+          
+          <em class="usa-logo__text">
+            Collaboration Dashboard
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/docs/">
+                <span>Documentation</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              
+              
+              
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-2">
+              <span>Navigation section</span>
+            </button>
+            
+            <ul id="nav-2" class="usa-nav__submenu">
+            
+            
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/two/a/">Demo link A</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/two/b/">Demo link B</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/two/c/">Demo link C</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/two/a/">Demo link D</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/two/b/">Demo link E</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/two/c/">Demo link F</a>
+                </li>
+                
+              
+            
+            </ul>
+            
+            
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              
+              
+              
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-3">
+              <span>Referenced section</span>
+            </button>
+            
+            <ul id="nav-3" class="usa-nav__submenu">
+            
+            
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/docs/">Documentation</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/docs/">Navigation section</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/docs/">External links</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/docs/">Privacy policy</a>
+                </li>
+                
+              
+            
+            </ul>
+            
+            
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="https://18f.gsa.gov">
+                <span>External link</span>
+              </a>
+            
+          </li>
+          
+        </ul>
+        
+
+        
+
+        
+          
+          <div class="usa-nav__secondary">
+            <ul class="usa-unstyled-list usa-nav__secondary-links">
+              
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="/docs/"
+                  >
+                    Documentation
+                  </a>
+                </li>
+              
+                <li class="usa-nav__secondary-item">
+                  <a href="/theme/"
+                  >
+                    Theme
+                  </a>
+                </li>
+              
+            </ul>
+            
+          </div>
+          
+
+
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" class="usa-section usa-section-timeline">
+        <section class="usa-hero usa-hero__timeline" aria-label="Introduction">
+  <div class="grid-container padding-y-8">
+    <div class="grid-row">
+      <div class="grid-col-12">
+          <h1 class="usa-heading__timeline">
+            WORKFORCE SPRINT
+          </h1>
+          <p class="usa-heading__tagline">
+            Solve problems for American workers, businesses, investors, and communities by catalyzing cross-sector collaboration.
+          </p>
+
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="grid-container usa-section" aria-label="Content">
+  <div class="dot-block" aria-label="navigation">
+    <!-- TODO: uncaught reference error becasue these are not defined when looped? -->
+    <button class="dot" onclick="currentSlide(1)"  tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(2)"  tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(3)"  tabindex="0"><buttonn>
+    <button class="dot" onclick="currentSlide(4)"  tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(5)"  tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(6)"  tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(7)"  tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(8)"  tabindex="0"></button>
+    <button class="dot" onclick="currentSlide(9)"  tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(10)" tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(11)" tabindex="0"></button> 
+    <button class="dot" onclick="currentSlide(12)" tabindex="0"></button> 
+    <!-- TODO: See if we add these in another iteration -->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+ </div>
+  <ul class="usa-card-group slideshow-container m-t-40">
+    
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 0</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">July 1 - July 5</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Join our Slack Community
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            New to Slack? Check out this page to get some tips on getting started.
+          </p>
+
+          
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+            <p class="usa-heading__event-title">
+              Optional User Engagement Workshop in Chicago (7/2)
+              
+              
+            </p>
+          
+          
+            <p class="usa-heading__event-description">Join an incredible group of TOP participants in an interactive workshop to get a deeper understanding of how the program will unfold, and a preview of the next 12 weeks.</p>
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 1</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">July 8 - July 12</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Problem Statement Orientation
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Dive into the weeds about your problem statement, and get more information about the goals of each challenge.
+          </p>
+
+          
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+            <p class="usa-heading__event-title">
+              User Research
+              
+              
+            </p>
+          
+          
+            <p class="usa-heading__event-description">In parallel to learning about the problem statements, learn more about the communities that are most affected by them and what their experiences, needs and challenges are like</p>
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 2</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">July 15 - July 19</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            User Research Milestone (7/18)
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams join the virtual milestone to share findings from user research that will inform the design of their product, and connect with user advocates to get feedback
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 3</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">July 22 - July 26</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            User Research + Data Exploration
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams continue to conduct user research and begin to explore available data sets
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 4</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">July 29 - August 2</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Continue Data Exploration
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams continue to explore available data sets
+          </p>
+
+          
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+            <p class="usa-heading__event-title">
+              Data Dive Milestone (8/1)
+              
+              
+            </p>
+          
+          
+            <p class="usa-heading__event-description">Teams join the virtual milestone to hear from data stewards and ask questions on available data sets</p>
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 5</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">August 5 - August 9</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Data Exploration & Product Development
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams explore available data sets, connect with data stewards, and begin scoping/developing products
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 6</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">August 12 - August 16</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Alpha Demo Milestone (8/15)
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Participants come together for a virtual demo of the tools in progress. Teams share concepts and wireframes, and get feedback from user advocates, data stewards, and product experts.
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 7</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">August 19 - August 23</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Product Development & User Testing
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams continue building products and collect user feedback
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 8</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">August 26 - August 30</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Beta Demos Milestone (8/29)
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams come together to showcase and share feedback on more mature versions of their products. Typically, tools have reached at least wireframes and have some functioning features.
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 9</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">September 2 - September 6</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Product Development & User Testing
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams continue building products and conduct user testing
+          </p>
+
+          
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+            <p class="usa-heading__event-title">
+              Labor Day - Sept 2nd
+              
+              
+            </p>
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 10</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">September 16 - September 20</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Product Development
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams continue building prototypes/products
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+      <li class="grid-col-12 usa-card mySlides fade">
+      <div class="usa-card__container ">
+        <header class="usa-card__header m-b-40">
+          <div class="grid-container">
+            <div class="grid-row grid-gap">
+              <h2 class="usa-card__heading grid-col-6 usa-heading__week">Week 11</h2>
+              <p class="margin-0 grid-col-6 grid-offset-3 usa-heading__dates">September 23 - September 27</p>
+            </div>
+          </div>
+        </header>
+        <div class="usa-card__body">
+          <div class="border-top border-accent-warm-light m-t-40" aria-hidden="true">&nbsp;</div>
+          
+          <p class="usa-heading__event-title">
+            Present final MVPs
+
+            
+          </p>
+          <p class="usa-heading__event-description">
+            Teams share MVP with TOP team prior to collective rollout
+          </p>
+
+          
+          
+        </div>
+      </div>
+      </li>
+      
+  </ul>
+</section>
+      </main>
+    
+
+    
+
+    <footer>
+
+
+
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="Agency identifier">
+    <div class="usa-identifier__container"><div class="usa-identifier__logos">
+        <a href="javascript:void(0);" class="usa-identifier__logo">
+          <img
+            class="usa-identifier__logo-img"
+            
+            src="/assets/uswds/img/circle-gray-20.svg"
+            
+            
+            alt="[Parent agency] logo"
+            
+            role="img">
+        </a></div><div class="usa-identifier__identity" aria-label="Agency description">
+        <p class="usa-identifier__identity-domain">domain.gov</p>
+        <p class="usa-identifier__identity-disclaimer">An official website of the <a href="javascript:void(0);">[Parent agency]</a></p>
+      </div>
+    </div>
+  </section>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a href="javascript:void(0);" class="usa-identifier__required-link">About [Parent shortname]</a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="javascript:void(0);"
+            class="usa-identifier__required-link">Accessibility support</a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="javascript:void(0);"
+            class="usa-identifier__required-link usa-link">FOIA requests</a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="javascript:void(0);"
+            class="usa-identifier__required-link usa-link">No FEAR Act data</a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Office of the Inspector General</a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Performance reports</a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="javascript:void(0);" class="usa-identifier__required-link usa-link">Privacy policy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="U.S. government information and services">
+    <div class="usa-identifier__container">
+      <div class="usa-identifier__usagov-description">Looking for U.S. government information and services?</div>
+      <a href="" class="usa-link">Visit USA.gov</a>
+    </div>
+  </section>
+  </div>
+
+</footer>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+      <script src="/assets/js/vendor/private_eye.js"></script>
+    
+
+  
+    
+      <script src="/assets/js/private_eye_conf.js"></script>
+    
+
+  
+    
+      <script src="/assets/uswds/js/carousel.js"></script>
+    
+
+  
+    
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
